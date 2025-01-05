@@ -1,0 +1,11 @@
+.TodoList-title {
+  color: green;
+}
+
+.TodoList-todos {
+  width: 80vw;
+  padding: 20px;
+  border: 2px solid red;
+  border-radius: 50px;
+  background: linear-gradient(#f06df2, #f7bf47);
+}

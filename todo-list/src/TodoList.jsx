@@ -3,6 +3,7 @@ import {v4 as uuid} from "uuid";
 
 import NewTodoForm from "./NewTodoForm.jsx";
 import Todo from "./Todo.jsx";
+import "./TodoList.css";
 
 const TodoList = () => {
   //each todo in the todos state array will be an object containing the id, content (string describing what to do) and whether the todo has been completed or not.
@@ -26,7 +27,7 @@ const TodoList = () => {
   const toggleTodo = (todoId) => {
     setTodos(todos => {
       return todos.map(todo => {
-        return todo.id == todoId ? todo : {...todo, completed: !(todo.completed)};
+        return todo.id == todoId ? {...todo, completed: !(todo.completed)} : todo;
       });
     });
   }

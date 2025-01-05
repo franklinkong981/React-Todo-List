@@ -1,4 +1,5 @@
 import react from "react";
+import "./Todo.css";
 
 const Todo = ({id, content, completed, removeTodoFunction, toggleTodoFunction}) => {
   const handleRemove = () => {
@@ -13,7 +14,7 @@ const Todo = ({id, content, completed, removeTodoFunction, toggleTodoFunction}) 
 
   return (
     <div className="Todo" id={id}>
-      <h4 className="Todo-text" style={{textDecoration: textDecorationStyle}}>{content}</h4>
+      <p className="Todo-text" style={{textDecoration: textDecorationStyle}}>{content}</p>
       <button className="Todo-toggle-button" onClick={handleToggle}>{completed ? "Unmark as incomplete" : "Mark as complete"}</button>
       <button className="Todo-remove-button" onClick={handleRemove}>Delete Todo</button>
     </div>

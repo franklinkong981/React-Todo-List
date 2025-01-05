@@ -1,0 +1,22 @@
+.Todo {
+  margin: 10px auto;
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.5);
+
+  display: flex;
+  justify-content: center;
+}
+
+
+.Todo-toggle-button, .Todo-remove-button {
+  font-size: 12px;
+  margin: 20px;
+}
+
+.Todo-toggle-button {
+  background-color: yellow;
+}
+
+.Todo-remove-button {
+  background-color: red;
+}
